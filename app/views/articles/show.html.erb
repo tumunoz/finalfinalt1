@@ -12,7 +12,7 @@
 
 <p>
   <strong>Body:</strong>
-  <%= @article.body %>
+  <%= truncate(@article.body, length:1000) %>
 </p>
 
 <p>
