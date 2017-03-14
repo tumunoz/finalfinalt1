@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     resources :comments
   end
   
+  
+  
   get 'admin/getArticles'
   
   root :to => "articles#index"
