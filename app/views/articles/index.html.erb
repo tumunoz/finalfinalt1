@@ -10,7 +10,8 @@
       <th>Body</th>
       <th>Comment Count</th>
       <th>Created At</th>
-      <th colspan="4"></th>
+      <th>Updated At</th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -22,6 +23,7 @@
         <td><%= truncate(article.body, length:1000) %></td>
         <td><%= article.comments.count %></td>
         <td><%= article.created_at %></td>
+        <td><%= article.updated_at %></td>
         <td><%= link_to 'Show', article %></td>
       </tr>
     <% end %>
